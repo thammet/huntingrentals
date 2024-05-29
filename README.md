@@ -5,6 +5,7 @@
 - App logo
 - Change browser tab title and logo too
 - Images for each group and item
+- Discount for days selected (fibonacci type discount with a max of 25% no matter what)
 - Domain
 - Company number (so nothing personal)
 - LLC (may not need right away)
