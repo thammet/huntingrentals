@@ -1,0 +1,25 @@
+#container {
+    width: 800px;
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#total-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: whitesmoke;
+    border: solid 1px gray;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: 500px;
+    }
+}
