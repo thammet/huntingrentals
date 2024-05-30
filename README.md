@@ -2,8 +2,7 @@
 
 - Flush out details
 - App name
-- App logo
-- Change browser tab title and logo too
+- Change browser tab logo
 - Images for each item
 - Discount for days selected (fibonacci type discount with a max of 25% no matter what)
 - Domain

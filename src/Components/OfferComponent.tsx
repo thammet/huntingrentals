@@ -87,7 +87,7 @@ export default function OfferComponent(props: {offer: Offer, onChange: OfferChan
             <Card style={{height: '100%'}} variant="outlined">
                 <CardMedia
                     className="card-image"
-                    image={props.offer.imageUrl}
+                    image={`${process.env.PUBLIC_URL}/${props.offer.imageUrl}`}
                 />
                 <CardContent>
                     <div style={{textAlign: 'center'}}>

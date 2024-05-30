@@ -25,18 +25,18 @@ function App() {
       <div id="page">
         <div style={{position: 'relative', textAlign: 'center', marginBottom: '50px'}}>
           <div style={{position: 'absolute', width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(3px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+            <Typography component="div" style={{color: 'white', marginTop: '10px', textTransform: 'uppercase', letterSpacing: '1.5px'}}>
+                Kansas City
+            </Typography>
             <Typography variant="h3" component="div" style={{color: 'white', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '2px'}}>
                 Hunting Rentals and Services 
             </Typography>
             <Typography variant="h5" component="div" style={{color: 'white', marginTop: '10px', textTransform: 'uppercase', letterSpacing: '1.5px'}}>
                 Make the most of your hunting adventures
             </Typography>
-            <Typography component="div" style={{color: 'white', marginTop: '10px', textTransform: 'uppercase', letterSpacing: '1.5px'}}>
-                Kansas City
-            </Typography>
           </div>
 
-          <img id="landing-image" src='maninfield.png' />
+          <img id="landing-image" src={`${process.env.PUBLIC_URL}/maninfield.png`} />
         </div>
 
 
