@@ -17,12 +17,17 @@ function OfferItemQuantity(props: {offerItem: OfferItem, onChange: OfferItemChan
     
     useEffect(() => {
         if(quantity < 0 || isNaN(quantity)) setQuantity(0);
-        if(quantity > props.offerItem.maxQuantity) setQuantity(props.offerItem.maxQuantity);
-        props.onChange({
-            ...props.offerItem,
-            currentQuantity: quantity
-        })
+        else if(quantity > props.offerItem.maxQuantity) setQuantity(props.offerItem.maxQuantity);
+        // todo force stepping eventually else if(quantity % 10 != 0) setQuantity(Math.floor(quantity / 10));
+        else {
+            props.onChange({
+                ...props.offerItem,
+                currentQuantity: quantity
+            })
+        }
     }, [quantity, props.offerItem.maxQuantity])
+
+
 
     return (
         <TextField
@@ -30,6 +35,7 @@ function OfferItemQuantity(props: {offerItem: OfferItem, onChange: OfferItemChan
             sx={{ width: '20ch' }}
             value={quantity}
             onChange={e => setQuantity(parseInt(e.target.value))}
+            onFocus={e => e.target.select()}
             InputProps={{
                 endAdornment: <InputAdornment position="end">/ {props.offerItem.maxQuantity} max</InputAdornment>,
             }}
@@ -57,7 +63,7 @@ export default function OfferComponent(props: {offer: Offer, onChange: OfferChan
         for(const offerItem of props.offer.items) {
             price += offerItem.price * offerItem.currentQuantity
         }
-        return (price / 100);
+        return price;
     }
 
     const calculateTotalPrice = () => {
@@ -80,7 +86,7 @@ export default function OfferComponent(props: {offer: Offer, onChange: OfferChan
         <div id="container">
             <Card style={{height: '100%'}} variant="outlined">
                 <CardMedia
-                    sx={{ height: 200 }}
+                    className="card-image"
                     image={props.offer.imageUrl}
                 />
                 <CardContent>
@@ -101,7 +107,7 @@ export default function OfferComponent(props: {offer: Offer, onChange: OfferChan
                                             <Avatar alt={offerItem.name} src={offerItem.imageUrl} />
                                         </ListItemAvatar>
                                         <ListItemText
-                                            primary={offerItem.name}
+                                            primary={<div>{offerItem.name} <small>({USDollar.format(offerItem.price)})</small></div>}
                                             secondary={<OfferItemQuantity offerItem={offerItem} onChange={offerItemChanged} />}
                                         />
                                     </ListItem>
@@ -124,6 +130,8 @@ export default function OfferComponent(props: {offer: Offer, onChange: OfferChan
                                 <Input  
                                     value={days}
                                     onChange={e => setDays(parseInt(e.target.value))}
+                                    onFocus={e => e.target.select()}
+                                    //onWheel={(e) => e.preventDefault()} // so value doesn't change on scroll
                                     type="number"
                                     inputProps={{ style: {textAlign: 'end'} }}
                                 />

@@ -7,39 +7,47 @@ const blindsOfferItem: OfferItem = {
     imageUrl: 'goosedecoy.png',
     currentQuantity: 2,
     maxQuantity: 2,
-    price: 100,
+    price: 25,
 };
 
 export const offers: Offer[] = [
     {
       id: uuidv4(),
       name: 'Geese',
-      imageUrl: 'goosedecoy.png',
+      imageUrl: 'geeseflying.png',
       days: 1,
       items: [
         {
           id: uuidv4(),
-          name: 'Canadian Goose Full Body',
+          name: 'Silhouette Decoy',
           imageUrl: 'goosedecoy.png',
           currentQuantity: 120,
           maxQuantity: 120,
-          price: 100,
+          price: 25 / 12,
         },
         {
           id: uuidv4(),
-          name: 'Mallard Full Body',
+          name: 'Full Body Decoy',
           imageUrl: 'goosedecoy.png',
           currentQuantity: 100,
           maxQuantity: 100,
-          price: 100,
+          price: 30 / 12,
         },
         {
           id: uuidv4(),
-          name: 'Mojo Full Body',
+          name: 'Socks',
           imageUrl: 'goosedecoy.png',
-          currentQuantity: 10,
-          maxQuantity: 10,
-          price: 100,
+          currentQuantity: 1200,
+          maxQuantity: 1200,
+          price: 30 / 12,
+        },
+        {
+          id: uuidv4(),
+          name: 'Floaters',
+          imageUrl: 'goosedecoy.png',
+          currentQuantity: 100,
+          maxQuantity: 100,
+          price: 30 / 12,
         },
         blindsOfferItem
       ]
@@ -47,7 +55,7 @@ export const offers: Offer[] = [
     {
       id: uuidv4(),
       name: 'Deer',
-      imageUrl: 'deer.jpeg',
+      imageUrl: 'deer.jpg',
       days: 1,
       items: [
         
@@ -57,7 +65,7 @@ export const offers: Offer[] = [
           imageUrl: 'goosedecoy.png',
           currentQuantity: 100,
           maxQuantity: 100,
-          price: 100,
+          price: 1,
         },
         {
           id: uuidv4(),
@@ -65,7 +73,7 @@ export const offers: Offer[] = [
           imageUrl: 'goosedecoy.png',
           currentQuantity: 10,
           maxQuantity: 10,
-          price: 100,
+          price: 1,
         },
         blindsOfferItem
       ]
@@ -73,41 +81,57 @@ export const offers: Offer[] = [
     {
       id: uuidv4(),
       name: 'Turkey',
-      imageUrl: 'turkey.jpeg',
+      imageUrl: 'turkey.jpg',
       days: 1,
       items: [
         {
           id: uuidv4(),
-          name: 'Calls',
+          name: 'Hen Decoy',
           imageUrl: 'goosedecoy.png',
           currentQuantity: 2,
           maxQuantity: 2,
-          price: 100,
+          price: 15,
         },
         {
           id: uuidv4(),
-          name: 'Mojo Full Body',
+          name: 'Jake Decoy',
           imageUrl: 'goosedecoy.png',
           currentQuantity: 10,
           maxQuantity: 10,
-          price: 100,
+          price: 15,
+        },
+        {
+          id: uuidv4(),
+          name: 'Tom Decoy',
+          imageUrl: 'goosedecoy.png',
+          currentQuantity: 10,
+          maxQuantity: 10,
+          price: 15,
         },
         blindsOfferItem
       ]
     },
     {
       id: uuidv4(),
-      name: 'Mallard',
-      imageUrl: 'mallard.jpeg',
+      name: 'Duck',
+      imageUrl: 'mallard.png',
       days: 1,
       items: [
         {
           id: uuidv4(),
-          name: 'Calls',
+          name: 'Field',
           imageUrl: 'goosedecoy.png',
-          currentQuantity: 2,
-          maxQuantity: 2,
-          price: 100,
+          currentQuantity: 120,
+          maxQuantity: 120,
+          price: 25 / 12,
+        },
+        {
+          id: uuidv4(),
+          name: 'Full Body Canadians',
+          imageUrl: 'goosedecoy.png',
+          currentQuantity: 100,
+          maxQuantity: 100,
+          price: 30 / 12,
         },
         {
           id: uuidv4(),
@@ -115,7 +139,7 @@ export const offers: Offer[] = [
           imageUrl: 'goosedecoy.png',
           currentQuantity: 10,
           maxQuantity: 10,
-          price: 100,
+          price: 15,
         },
         blindsOfferItem
       ]

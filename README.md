@@ -9,7 +9,8 @@
 - Domain
 - Company number (so nothing personal)
 - LLC (may not need right away)
-
+- Scrolling on input causes it to change 
+- Update email and phone numbers
 
 ### `npm run build`
 

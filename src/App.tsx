@@ -31,9 +31,12 @@ function App() {
             <Typography variant="h5" component="div" style={{color: 'white', marginTop: '10px', textTransform: 'uppercase', letterSpacing: '1.5px'}}>
                 Make the most of your hunting adventures
             </Typography>
+            <Typography component="div" style={{color: 'white', marginTop: '10px', textTransform: 'uppercase', letterSpacing: '1.5px'}}>
+                Kansas City
+            </Typography>
           </div>
 
-          <img id="landing-image" src='deerinfield.jpg' />
+          <img id="landing-image" src='maninfield.png' />
         </div>
 
 
@@ -42,7 +45,7 @@ function App() {
               Rentals
           </Typography>
           <Typography color="text.secondary" gutterBottom>
-              Browse our list of available hunt combos or give us a call for a custom set of equipment to fit your needs 
+              Browse our list of excursions or give us a call for a custom set of equipment to fit your needs 
           </Typography>
         </div>
         <div id="offers-container">

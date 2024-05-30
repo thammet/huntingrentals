@@ -2,6 +2,10 @@
     width: 800px;
 }
 
+.card-image {
+    height: calc(800px / 3);
+}
+
 #content-container {
     display: flex;
     justify-content: space-between;
@@ -21,5 +25,9 @@
 @media (max-width: 600px) {
     #container {
         width: 500px;
+    }
+
+    .card-image {
+        height: calc(500px / 3);
     }
 }
