@@ -4,13 +4,15 @@
 - App name
 - App logo
 - Change browser tab title and logo too
-- Images for each group and item
+- Images for each item
 - Discount for days selected (fibonacci type discount with a max of 25% no matter what)
 - Domain
-- Company number (so nothing personal)
 - LLC (may not need right away)
 - Scrolling on input causes it to change 
-- Update email and phone numbers
+- Update email
+- Record new voicemail 
+- Order hunting offers by season (show active hunting seasons first)
+
 
 ### `npm run build`
 
