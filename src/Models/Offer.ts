@@ -14,3 +14,4 @@ export interface OfferItem {
     maxQuantity: number,
     price: number
 }
+

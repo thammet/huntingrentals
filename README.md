@@ -1,10 +1,6 @@
 ### Next steps
 
-- Flush out details
-- App name
-- Change browser tab logo
-- Images for each item
-- Discount for days selected (fibonacci type discount with a max of 25% no matter what)
+- Image for layout blind
 - Domain
 - LLC (may not need right away)
 - Scrolling on input causes it to change 
