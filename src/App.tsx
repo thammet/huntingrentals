@@ -76,8 +76,8 @@ function App() {
         </Typography>
 
         <div style={{display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center'}}>
-          <Button href={`tel:${TelephoneNumber}`} size="small" color="secondary" variant='contained' style={{width: '200px'}}  startIcon={<PhoneIcon />}>{formatPhoneNumber(TelephoneNumber)}</Button>
-          <Button href={`mailto:${Email}`} size="small" color="secondary" variant='contained' style={{width: '200px'}}  startIcon={<EmailIcon />}>{Email}</Button>
+          <Button href={`tel:${TelephoneNumber}`} size="small" color="secondary" variant='contained' style={{width: '250px'}}  startIcon={<PhoneIcon />}>{formatPhoneNumber(TelephoneNumber)}</Button>
+          <Button href={`mailto:${Email}`} size="small" color="secondary" variant='contained' style={{width: '250px'}}  startIcon={<EmailIcon />}>{Email}</Button>
         </div>
        </div>
     </div>
