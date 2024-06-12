@@ -2,7 +2,7 @@ import { Offer, OfferItem } from "../Models/Offer";
 import { uuidv4 } from "../Utis";
 
 
-const groundBlindOfferItem: OfferItem = {
+const layoutBlindOfferItem: OfferItem = {
     id: uuidv4(),
     name: 'Layout Blind',
     imageUrl: 'goosedecoy.png',
@@ -11,10 +11,10 @@ const groundBlindOfferItem: OfferItem = {
     price: 200,
 };
 
-const aFramedOfferItem: OfferItem = {
+const aFrameOfferItem: OfferItem = {
   id: uuidv4(),
   name: 'A Frame',
-  imageUrl: 'decoys/aframe.jpg',
+  imageUrl: 'Decoys/aframe.jpg',
   currentQuantity: 1,
   maxQuantity: 2,
   price: 200,
@@ -30,7 +30,7 @@ export const offers: Offer[] = [
         {
           id: uuidv4(),
           name: 'Full Body Decoy',
-          imageUrl: 'decoys/fullbodydecoyswide.jpg',
+          imageUrl: 'Decoys/fullbodydecoyswide.jpg',
           currentQuantity: 50,
           maxQuantity: 100,
           price: 15,
@@ -38,13 +38,13 @@ export const offers: Offer[] = [
         {
           id: uuidv4(),
           name: 'Socks',
-          imageUrl: 'decoys/allsockswiderighthigh.jpg',
+          imageUrl: 'Decoys/allsockswiderighthigh.jpg',
           currentQuantity: 200,
           maxQuantity: 500,
           price: 3.5,
         },
-        groundBlindOfferItem,
-        aFramedOfferItem
+        layoutBlindOfferItem,
+        aFrameOfferItem
       ]
     },
     // {

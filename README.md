@@ -9,6 +9,10 @@
 - Order hunting offers by season (show active hunting seasons first)
 
 
+# Important Notes
+Home page in package.json has to be `http://kc-hunting.com`
+Steps to deploy with GoDaddy: https://www.youtube.com/watch?v=dbgEWWBvIxY 
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
