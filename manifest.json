@@ -1,8 +1,7 @@
 {
-  "short_name": "KC Hunting",
+  "short_name": "Hunting",
   "name": "KC Hunting",
   "icons": [
-    
   ],
   "start_url": ".",
   "display": "standalone",
