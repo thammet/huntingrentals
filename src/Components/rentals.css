@@ -1,15 +1,13 @@
-.quantity-wrapper {
-    width: 110px;
-}
-
-
-#container {
+#rental-container{
     display: grid;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-content: start;
 }
 
 @media (min-width: 1000px) {
-    #container {
-        grid-template-columns: 1fr 1fr;
-    }
+    #rental-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 50px;
+    }     
 }

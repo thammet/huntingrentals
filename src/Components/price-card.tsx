@@ -135,7 +135,12 @@ export default function PriceCard(props: {rentals: IRental[], startDate: Date, e
                                 <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px'}} className="text-xl">
                                     {props.delivery && (
                                         <>
-                                            <div>Delivery</div>
+                                            <div>
+                                                Delivery 
+                                                <div className="text-tiny text-default-500">
+                                                    The price may change depending on the actual hunt location. 
+                                                </div>
+                                            </div>
                                             <div className="text-end">{USDollar.format(BaseDeliveryCharge)}</div>
                                         </>
                                     )}
