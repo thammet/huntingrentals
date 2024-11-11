@@ -1,0 +1,15 @@
+.quantity-wrapper {
+    width: 110px;
+}
+
+
+#container {
+    display: grid;
+    gap: 20px;
+}
+
+@media (min-width: 1000px) {
+    #container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

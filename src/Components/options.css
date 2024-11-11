@@ -1,0 +1,7 @@
+.option-chip {
+    padding: 10px;
+}
+
+.option-chip:hover {
+    cursor: pointer;
+}
