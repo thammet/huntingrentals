@@ -1,5 +1,6 @@
 export default interface IRental {
     name: string,
+    type: string,
     image: string,
     maxQuantity: number,
     currentQuantity: number,

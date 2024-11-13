@@ -1,4 +1,4 @@
-#rental-container{
+.rental-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 1000px) {
-    #rental-container{
+    .rental-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 50px;
     }     
